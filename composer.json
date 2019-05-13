@@ -1,0 +1,19 @@
+{
+  "name": "tinyu0/laravels-file-monitor",
+  "description": "Laravels file Monitor",
+  "type": "library",
+  "license": "MIT",
+  "require": {
+    "php": ">=5.5.9",
+    "hhxsv5/laravel-s": "v3.x"
+  },
+  "autoload": {
+    "psr-4": {
+      "Tinyu0\\Laravels\\Monitor\\": "src/"
+    }
+  },
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev"
+}
