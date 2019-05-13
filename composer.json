@@ -4,8 +4,7 @@
   "type": "library",
   "license": "MIT",
   "require": {
-    "php": ">=5.5.9",
-    "hhxsv5/laravel-s": "v3.x"
+    "php": ">=5.5.9"
   },
   "autoload": {
     "psr-4": {
