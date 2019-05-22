@@ -33,7 +33,7 @@ class monitor implements WorkerStartInterface
         if($this->monitor && 0 == $workerId) {
             $paths = $this->monitorPath;
 
-            $server->tick($this->monitorInterval, function () use ($paths, $server) {
+            $server->tick($this->monitorInterval * 1000, function () use ($paths, $server) {
                 foreach ($paths as $path) {
                     $dir = new \RecursiveDirectoryIterator($path);
                     $iterator = new \RecursiveIteratorIterator($dir);

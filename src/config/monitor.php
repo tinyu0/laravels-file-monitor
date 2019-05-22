@@ -11,6 +11,6 @@ return [
         app()->basePath().DIRECTORY_SEPARATOR.'routes'
     ],
 
-    //Monitor interval
+    //Monitor interval, unit is seconds.
     'interval' => 2,
 ];
