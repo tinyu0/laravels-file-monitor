@@ -22,7 +22,7 @@ php artisan laravels publish
 3.Change `config/laravels.php`: event_handlers [Settings](https://github.com/tinyu0/laravels-file-monitor/blob/master/Settings.md).
 ```php
     'event_handlers'           => [
-        'WorkerStart' => \Tinyu0\Laravels\Monitor::class
+        'WorkerStart' => \Tinyu0\Laravels\Monitor\monitor::class
     ],
 ```
 
