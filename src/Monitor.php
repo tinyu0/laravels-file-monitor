@@ -4,7 +4,7 @@ namespace Tinyu0\Laravels\Monitor;
 use Hhxsv5\LaravelS\Swoole\Events\WorkerStartInterface;
 use Swoole\Http\Server;
 
-class monitor implements WorkerStartInterface
+class Monitor implements WorkerStartInterface
 {
     private $monitorPath = [];
     private $monitorInterval;
