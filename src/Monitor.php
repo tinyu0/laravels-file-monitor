@@ -16,8 +16,8 @@ class Monitor implements WorkerStartInterface
         $this->monitor = app('config')->get('monitor.enable', env('APP_DEBUG', false));
         $this->monitorPath = app('config')->get('monitor.path', [
             app()->path(),
-            app()->getConfigurationPath(),
-            app()->basePath().DIRECTORY_SEPARATOR.'routes'
+            app()->basePath('config'),
+            app()->basePath('routes')
         ]);
         $this->monitorInterval = app('config')->get('monitor.interval', 2);
         $this->lastMtime = time();
